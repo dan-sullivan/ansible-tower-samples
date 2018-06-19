@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: AWS Key Work
       debug:
-        msg: "Hello World!"
+        msg: "{{ lookup('env','AWS_ACCESS_KEY_ID') }}"
 
